@@ -1,0 +1,35 @@
+Q1. What are routes?
+	Routes describes the interfaces for making requests to your web app. Combining an HTTP request method and a path, you define 
+	URLs in your app. Each route has an associated route handler, which does the job of performing any action in the app and 
+	sending the HTTP response.
+
+
+
+Q2. Add new Gem File:
+	Open Gemfile in your favorite text editor. Add the line gem 'paperclip'. Then run bundle install.
+
+
+
+Q3. Fibonacci number (Sinatra)
+
+	require 'sinatra'
+	get '/fibo' do
+	
+		n = params[:n]
+		f = fib(n.to_i)
+		return "Fibo = #{f}"
+	
+	end
+
+	def fib(n)
+		i=2
+		a=0
+		b=1
+		while i<n
+			c = a+b
+			a = b
+			b = c
+			i = i + 1
+		end
+		return c
+	end

@@ -1,0 +1,25 @@
+Q1. Hello World Sinatra:
+
+	require 'sinatra'
+	get '/' do
+		never had those
+		p "Hello World"
+	end
+
+
+
+
+Q2. What is bundler?
+	Bundler is a program for managing gem dependencies in your Ruby projects. With Bundler you can specify which gems your program 
+	needs, what versions they should be at, it can help you install them, load them at runtime and distribute them with your 
+	software. Basically, it takes all of the guesswork out of installing the gems needed to run your Ruby projects.
+
+
+Q3.
+ 	bundle-install - Install the dependencies specified in your Gemfile 
+ 
+ 
+Q4. What is a gemfile?
+	A Gemfile is a file we create which is used for describing gem dependencies for Ruby programs. A gem is a collection of Ruby 
+	code that we can extract into a “collection” which we can call later.
+

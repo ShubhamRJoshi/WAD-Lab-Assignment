@@ -1,0 +1,72 @@
+Q1. Linux Commands:
+	
+	1. pwd - gives the path of present working dir.
+	2. top - Display linux process
+	3. less - opposite of more
+	4. man - an interface to the on-line reference manuals
+	5. cat - concatenate files and print on the standard output
+	6. chmod - change file mode bits
+	
+	
+Q2. Difference Between chmod a+x and chmod 755:
+
+	chmod a+x modifies the argument's mode while chmod 755 sets it.
+
+
+
+Q3. REPL:
+
+	Interactive Ruby Shell (IRB or irb) is a REPL for programming in the object-oriented scripting language Ruby. The abbreviation 
+	i r b comes from the fact that the filename extension for Ruby is ".rb", although interactive Ruby files do not have an 
+	extension of 		".irb".
+
+
+
+
+Q4. Iterators:
+
+	Iterators are not an original concept with ruby. They are in common use in object-oriented languages. They are also used in 
+	Lisp, though there they are not called iterators. However the concept of iterator is an unfamiliar one for many so it should be 	explained in more detail.
+
+	The verb iterate means to do the same thing many times, you know, so an iterator is something that does the same thing many 
+	times.
+
+	When we write code, we need loops in various situations. In C, we code them using for or while. For example,
+
+	char *str;
+	for (str = "abcdefg"; *str != '\0'; str++) {
+	  /* process a character here */
+	}
+
+	C's for(...) syntax provides an abstraction to help with the creation of a loop, but the test of *str against a null character 
+	requires the programmer to know details about the internal structure of a string. This makes C feel like a low-level language. 
+	Higher level languages are marked by their more flexible support for iteration. Consider the following sh shell script:
+
+	#!/bin/sh
+
+	for i in *.[ch]; do
+	  # ... here would be something to do for each file
+	done
+
+
+
+Q5. Open Classes: 
+
+	In Ruby, classes are never closed: methods can always be added to an existing class. This applies to all classes, including the 	standard, built-in classes. All that is needed to do is open up a class definition for an existing class, and the new contents 
+	specified will be added to the existing contents.
+
+
+
+Q6. Ruby Program to overload '+' operator:
+
+	class Tester1
+	 def initialize x
+	   @x = x
+	 end
+	 def +(y)
+	   @x.to_s + y.to_s
+	 end
+	end
+	a = Tester1.new 11.to_s
+	puts(a+22)
+

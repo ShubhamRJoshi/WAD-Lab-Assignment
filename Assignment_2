@@ -1,0 +1,52 @@
+Q1. What RVM is used for?
+
+	RVM make installing multiple ruby interpreters / runtimes easy and consistent, it provides features such as gemsets that aren't 	typically supported out of the box on most ruby installs.
+
+	RVM also lets you use different rubies in a manner that won't mess with your existing ruby install (unless you tell it to) as 
+	well as letting you run multiple different rubies in separate terminals concurrently!
+
+
+
+Q2. What is '#!'?
+	#! defines the starting of the script execution. It helps in choosing the correct shell, so that some of the commands 
+	incompatible to a particular shell don’t fail.
+
+
+
+Q3. Nth Fibonacci Number:
+
+	def fib(n)
+		if(n == 1 || n == 0)
+			return 1
+		else
+			f = fib(n-1)+fib(n-2)
+		end
+	end
+
+	def main
+		n = (ARGV[0] || 5).to_i
+		f = fib(n)
+		p f
+	end
+	main
+
+
+
+Q4. Josephus problem:
+
+	def josephus(n,k)
+		people = (0...n).to_a
+		while people.count > 1
+			people.rotate!(k-1).shift
+		end
+		return people.first
+	end
+
+	def main
+		n=(ARGV[0] || 5).to_i
+		k=(ARGV[1] || 3).to_i
+		p josephus(n,k)
+	end
+
+	main
+
